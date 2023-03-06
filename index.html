@@ -12,30 +12,38 @@
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/root.css">
 
   <title>Frontend Mentor | Time tracking dashboard</title>
 
 </head>
 <body class="m-0 p-0 no-underline">
   <div class="w-screen h-screen">
-    <div class="flex flex-row items-center justify-center text-center w-full h-full bg-blue-600">
-      <div class="flex flex-row bg-red-600">  
-        <div class="flex flex-col bg-green-700 m-2">
-          <div class="w-52 h-full bg-black">
-            <p>Report for</p>
-            <h1>Jeremy Robson</h1>
+    <div class="flex flex-row items-center justify-center text-center w-full h-full bg-[var(--neutral-Very-dark-blue)]">
+      <div class="flex flex-row bg-[var(--neutral-Very-dark-blue)]">  
+        <div class="flex flex-col m-2">
+          <div class="w-52 h-full bg-[var(--neutral-Dark-blue)] relative rounded-lg">
+            <div class="absolute w-52 bottom-0">
+              <p>Daily</p>
+              <p>Weekly</p>
+              <p>Monthly</p>              
+            </div>
+            <div class="bg-[var(--primary-Blue)] w-52 h-2/3 absolute top-0 bottom-2 rounded-lg">
+              <p>Report for</p>
+              <h1>Jeremy Robson</h1>              
+            </div>
           </div>
-          <div class="w-52 h-1/2 bg-white">
+          <!-- <div class="w-52 h-full bg-[var(--neutral-Dark-blue)] absolute">
             <p>Daily</p>
             <p>Weekly</p>
             <p>Monthly</p>
-          </div>
+          </div> -->
         </div> 
            
         <div class="grid grid-cols-3 gap-2 mb-2">          
-          <div class="bg-purple-600 w-52 h-52 m-2 rounded-t-lg place-self-end">
-            <img src="./images/icon-social.svg" alt="" class="w-10 h-10">         
-            <div class="w-52 h-44 bg-white rounded-lg">               
+          <div class="bg-[var(--primary-Light-red-work)] w-52 h-52 m-2 rounded-t-lg place-self-end">
+            <img src="./images/icon-work.svg" alt="" class="w-10 h-10">         
+            <div class="w-52 h-44 bg-[var(--neutral-Dark-blue)] rounded-lg">               
               <h2>Work</h2>
               <h1>5hrs</h1>
               <p>Previous - 7hrs</p>
@@ -47,9 +55,9 @@
           </div>
           
 
-          <div class="bg-purple-600 w-52 h-52 m-2 rounded-t-lg items-end justify-end">
-            <img src="./images/icon-social.svg" alt="" class="w-10 h-10">            
-            <div class="w-52 h-44 bg-white rounded-lg">          
+          <div class="bg-[var(--primary-Soft-blue-play)] w-52 h-52 m-2 rounded-t-lg items-end justify-end">
+            <img src="./images/icon-play.svg" alt="" class="w-10 h-10">            
+            <div class="w-52 h-44 bg-[var(--neutral-Dark-blue)] rounded-lg">          
               <h2>Play</h2>
               1hr <!-- daily -->
               Previous - 2hrs <!-- daily -->
@@ -60,9 +68,9 @@
             </div>
           </div>
 
-          <div class="bg-purple-600 w-52 h-52 m-2 rounded-t-lg items-end justify-end">
-            <img src="./images/icon-social.svg" alt="" class="w-10 h-10">            
-            <div class="w-52 h-44 bg-white rounded-lg">          
+          <div class="bg-[var(--primary-Light-red-study)] w-52 h-52 m-2 rounded-t-lg items-end justify-end">
+            <img src="./images/icon-study.svg" alt="" class="w-10 h-10">            
+            <div class="w-52 h-44 bg-[var(--neutral-Dark-blue)] rounded-lg">          
               <h2>Study</h2>
               0hrs <!-- daily -->
               Previous - 1hr <!-- daily -->
@@ -73,9 +81,9 @@
             </div>
           </div>
 
-          <div class="bg-purple-600 w-52 h-52 m-2 rounded-t-lg items-end justify-end">
-            <img src="./images/icon-social.svg" alt="" class="w-10 h-10">            
-            <div class="w-52 h-44 bg-white rounded-lg">          
+          <div class="bg-[var(--primary-Lime-green-exercise)] w-52 h-52 m-2 rounded-t-lg items-end justify-end">
+            <img src="./images/icon-exercise.svg" alt="" class="w-10 h-10">            
+            <div class="w-52 h-44 bg-[var(--neutral-Dark-blue)] rounded-lg">          
               <h2>Exercise</h2>
               1hr <!-- daily -->
               Previous - 1hr <!-- daily -->
@@ -86,9 +94,9 @@
             </div>
           </div>
 
-          <div class="bg-purple-600 w-52 h-52 m-2 rounded-t-lg items-end justify-end">
+          <div class="bg-[var(--primary-Violet-social)] w-52 h-52 m-2 rounded-t-lg items-end justify-end">
             <img src="./images/icon-social.svg" alt="" class="w-10 h-10">            
-            <div class="w-52 h-44 bg-white rounded-lg">          
+            <div class="w-52 h-44 bg-[var(--neutral-Dark-blue)] rounded-lg">          
               <h2>Social</h2>
               1hr <!-- daily -->
               Previous - 3hrs <!-- daily -->
@@ -99,9 +107,9 @@
             </div>
           </div>
 
-          <div class="bg-purple-600 w-52 h-52 m-2 rounded-t-lg items-end justify-end">
-            <img src="./images/icon-social.svg" alt="" class="w-10 h-10">            
-            <div class="w-52 h-44 bg-white rounded-lg">          
+          <div class="bg-[var(--primary-Soft-orange-self-care)] w-52 h-52 m-2 rounded-t-lg items-end justify-end">
+            <img src="./images/icon-self-care.svg" alt="" class="w-10 h-10">            
+            <div class="w-52 h-44 bg-[var(--neutral-Dark-blue)] rounded-lg">          
               <h2>Self Care</h2>
               0hrs <!-- daily -->
               Previous - 1hr <!-- daily -->
