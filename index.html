@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>  
+  <script src="./js/data.js"></script>
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,61 +38,9 @@
           </div>          
         </div> 
            
-        <div class="grid grid-cols-3 gap-2 mb-2 text-left">          
-          <div class="bg-[var(--primary-Light-red-work)] w-52 h-52 m-2 rounded-t-lg">
-            <img src="./images/icon-work.svg" alt="" class="w-10 h-10">         
-            <div class="w-52 h-44 bg-[var(--neutral-Dark-blue)] rounded-lg p-7">
-              <h2 class="flex flex-row justify-between mb-7 -mt-2 font-normal">Work<a href="" class="font-normal text-[var(--neutral-Pale-Blue)]">•••</a></h2>
-              <h1 class="text-5xl mb-2 font-light" >32hrs</h1>
-              <p>Last week  - 36hrs</p>              
-            </div>
-          </div>
-          
-
-          <div class="bg-[var(--primary-Soft-blue-play)] w-52 h-52 m-2 rounded-t-lg">
-            <img src="./images/icon-play.svg" alt="" class="w-10 h-10">            
-            <div class="w-52 h-44 bg-[var(--neutral-Dark-blue)] rounded-lg p-7">          
-              <h2 class="flex flex-row justify-between mb-7 -mt-2 font-normal">Play<a href="" class="font-normal text-[var(--neutral-Pale-Blue)]">•••</a></h2>
-              <h1 class="text-5xl mb-2 font-light">10hrs</h1>
-              <p>Last week  - 8hrs</p>  
-            </div>
-          </div>
-
-          <div class="bg-[var(--primary-Light-red-study)] w-52 h-52 m-2 rounded-t-lg">
-            <img src="./images/icon-study.svg" alt="" class="w-10 h-10">            
-            <div class="w-52 h-44 bg-[var(--neutral-Dark-blue)] rounded-lg p-7">          
-              <h2 class="flex flex-row justify-between mb-7 -mt-2 font-normal">Study<a href="" class="font-normal text-[var(--neutral-Pale-Blue)]">•••</a></h2>
-              <h1 class="text-5xl mb-2 font-light">4hrs</h1>
-              <p>Last week  - 7hrs</p>  
-            </div>
-          </div>
-
-          <div class="bg-[var(--primary-Lime-green-exercise)] w-52 h-52 m-2 rounded-t-lg">
-            <img src="./images/icon-exercise.svg" alt="" class="w-10 h-10">            
-            <div class="w-52 h-44 bg-[var(--neutral-Dark-blue)] rounded-lg p-7">          
-              <h2 class="flex flex-row justify-between mb-7 -mt-2 font-normal">Exercise<a href="" class="font-normal text-[var(--neutral-Pale-Blue)]">•••</a></h2>
-              <h1 class="text-5xl mb-2 font-light">4hrs</h1>
-              <p>Last week  - 5hrs</p>  
-            </div>
-          </div>
-
-          <div class="bg-[var(--primary-Violet-social)] w-52 h-52 m-2 rounded-t-lg">
-            <img src="./images/icon-social.svg" alt="" class="w-10 h-10">            
-            <div class="w-52 h-44 bg-[var(--neutral-Dark-blue)] rounded-lg p-7">          
-              <h2 class="flex flex-row justify-between mb-7 -mt-2 font-normal">Social<a href="" class="font-normal text-[var(--neutral-Pale-Blue)]">•••</a></h2>
-              <h1 class="text-5xl mb-2 font-light">5hrs</h1>
-              <p>Last week  - 10hrs</p>  
-            </div>
-          </div>
-
-          <div class="bg-[var(--primary-Soft-orange-self-care)] w-52 h-52 m-2 rounded-t-lg">
-            <img src="./images/icon-self-care.svg" alt="" class="w-10 h-10">            
-            <div class="w-52 h-44 bg-[var(--neutral-Dark-blue)] rounded-lg p-7">          
-              <h2 class="flex flex-row justify-between mb-7 -mt-2 font-normal">Self Care<a href="" class="font-normal text-[var(--neutral-Pale-Blue)]">•••</a></h2>
-              <h1 class="text-5xl mb-2 font-light">2hrs</h1>
-              <p>Last week  - 2hrs</p>  
-            </div>
-        </div></div>
+        <div class="grid grid-cols-3 gap-2 mb-2 text-left" id="data">          
+          <!-- Aqui os componentes estão sendo gerados dinâmicamente com Jquery, partindo de dados estáticos em Json -->
+        </div>
 
       </div>
     </div>
