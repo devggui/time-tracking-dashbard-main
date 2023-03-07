@@ -6,7 +6,7 @@
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>  
-  <script src="./js/data.js"></script>
+  <script src="./js/component.js"></script>
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,14 +21,14 @@
 </head>
 <body class="m-0 p-0 no-underline">
   <div class="w-screen h-screen">
-    <div class="flex flex-row items-center justify-center text-center w-full h-full bg-[var(--neutral-Very-dark-blue)]">
+    <div class="flex flex-col items-center justify-center text-center w-full h-full bg-[var(--neutral-Very-dark-blue)]">
       <div class="flex flex-row bg-[var(--neutral-Very-dark-blue)]">  
         <div class="flex flex-col m-2">
           <div class="w-52 h-full bg-[var(--neutral-Dark-blue)] relative rounded-lg">
             <div class="absolute w-52 bottom-0 text-left m-2">
-              <a href=""><p class="text-[var(--neutral-Pale-Blue)] m-4 hover:text-white">Daily</p></a>
-              <a href=""><p class="text-[var(--neutral-Pale-Blue)] m-4 hover:text-white">Weekly</p></a>
-              <a href=""><p class="text-[var(--neutral-Pale-Blue)] m-4 hover:text-white">Monthly</p></a>
+              <a id="btn-daily"><p class="text-[var(--neutral-Pale-Blue)] m-4 hover:text-white cursor-pointer">Daily</p></a>
+              <a id="btn-weekly"><p class="text-[var(--neutral-Pale-Blue)] m-4 hover:text-white cursor-pointer">Weekly</p></a>
+              <a id="btn-monthly"><p class="text-[var(--neutral-Pale-Blue)] m-4 hover:text-white cursor-pointer">Monthly</p></a>
             </div>
             <div class="flex flex-col text-left bg-[var(--primary-Blue)] w-52 h-2/3 absolute top-0 bottom-2 rounded-lg p-6">
               <div class="w-14 h-14 mb-12 rounded-[50%] border-2 border-white bg-[url('./images/image-jeremy.png')] bg-cover"></div>
@@ -41,13 +41,13 @@
         <div class="grid grid-cols-3 gap-2 mb-2 text-left" id="data">          
           <!-- Aqui os componentes estão sendo gerados dinâmicamente com Jquery, partindo de dados estáticos em Json -->
         </div>
-
+      </div>
+      <div class="attribution absolute bottom-0 mb-2">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/devggui/time-tracking-dashbard-main">Guilherme Silva (devggui)</a>.
       </div>
     </div>
-    <!-- <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="https://github.com/devggui/time-tracking-dashbard-main">Guilherme Silva (devggui)</a>.
-    </div> -->
+    
   </div>  
 </body>
 </html>

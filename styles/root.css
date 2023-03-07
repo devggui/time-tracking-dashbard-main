@@ -22,3 +22,12 @@
 p {
   color: var(--neutral-Pale-Blue);
 }
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+
+.attribution a { 
+  color: var(--neutral-Pale-Blue); 
+}

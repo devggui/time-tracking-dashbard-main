@@ -118,9 +118,65 @@ $(document).ready(function() {
     ]
   };
 
-  for(let i = 0; i < json.data.length; i++) {
-    
-    let html = '<div class="'+json.data[i].background+' w-52 h-52 m-2 rounded-t-lg">';
+  // Period Selected
+
+  let html = '';
+
+  $('a#btn-daily').click(function() {
+    $('div#data div#component').remove(); 
+    for(let i = 0; i < json.data.length; i++) {
+      
+          html = '<div class="'+json.data[i].background+' w-52 h-52 m-2 rounded-t-lg" id="component">';
+            html += '<img src="./images/'+json.data[i].url+'" alt="" class="w-10 h-10">';
+              html+= '<div class="w-52 h-44 bg-[var(--neutral-Dark-blue)] rounded-lg p-7">';
+                html+= '<h2 class="flex flex-row justify-between mb-7 -mt-2 font-normal" id="title">'+json.data[i].title+'<a href="" class="font-normal text-[var(--neutral-Pale-Blue)]">•••</a></h2>';
+                html+= '<h1 class="text-5xl mb-2 font-light">'+json.data[i].timeframes.daily.current+'hrs</h1>';
+                html+= '<p>Last day  - '+json.data[i].timeframes.daily.previous+'hrs</p>              ';
+              html+= '</div>';
+          html += '</div>';
+  
+      $('div#data').append(html); 
+    }
+  })
+
+  $('a#btn-weekly').click(function() {
+    $('div#data div#component').remove(); 
+    for(let i = 0; i < json.data.length; i++) {
+      
+          html = '<div class="'+json.data[i].background+' w-52 h-52 m-2 rounded-t-lg" id="component">';
+            html += '<img src="./images/'+json.data[i].url+'" alt="" class="w-10 h-10">';
+              html+= '<div class="w-52 h-44 bg-[var(--neutral-Dark-blue)] rounded-lg p-7">';
+                html+= '<h2 class="flex flex-row justify-between mb-7 -mt-2 font-normal" id="title">'+json.data[i].title+'<a href="" class="font-normal text-[var(--neutral-Pale-Blue)]">•••</a></h2>';
+                html+= '<h1 class="text-5xl mb-2 font-light">'+json.data[i].timeframes.weekly.current+'hrs</h1>';
+                html+= '<p>Last week  - '+json.data[i].timeframes.weekly.previous+'hrs</p>              ';
+              html+= '</div>';
+          html += '</div>';
+  
+      $('div#data').append(html); 
+    }
+  })
+
+  $('a#btn-monthly').click(function() {
+    $('div#data div#component').remove(); 
+    for(let i = 0; i < json.data.length; i++) {
+      
+          html = '<div class="'+json.data[i].background+' w-52 h-52 m-2 rounded-t-lg" id="component">';
+            html += '<img src="./images/'+json.data[i].url+'" alt="" class="w-10 h-10">';
+              html+= '<div class="w-52 h-44 bg-[var(--neutral-Dark-blue)] rounded-lg p-7">';
+                html+= '<h2 class="flex flex-row justify-between mb-7 -mt-2 font-normal" id="title">'+json.data[i].title+'<a href="" class="font-normal text-[var(--neutral-Pale-Blue)]">•••</a></h2>';
+                html+= '<h1 class="text-5xl mb-2 font-light">'+json.data[i].timeframes.monthly.current+'hrs</h1>';
+                html+= '<p>Last month  - '+json.data[i].timeframes.monthly.previous+'hrs</p>              ';
+              html+= '</div>';
+          html += '</div>';
+  
+      $('div#data').append(html); 
+    }
+  })
+  
+  // Card Component
+  for(let i = 0; i < json.data.length; i++) {     
+    let html = '';
+        html = '<div class="'+json.data[i].background+' w-52 h-52 m-2 rounded-t-lg" id="component">';
           html += '<img src="./images/'+json.data[i].url+'" alt="" class="w-10 h-10">';
             html+= '<div class="w-52 h-44 bg-[var(--neutral-Dark-blue)] rounded-lg p-7">';
               html+= '<h2 class="flex flex-row justify-between mb-7 -mt-2 font-normal" id="title">'+json.data[i].title+'<a href="" class="font-normal text-[var(--neutral-Pale-Blue)]">•••</a></h2>';
@@ -132,4 +188,3 @@ $(document).ready(function() {
     $('div#data').append(html); 
   }
 })
-
