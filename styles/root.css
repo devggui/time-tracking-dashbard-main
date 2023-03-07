@@ -10,13 +10,15 @@
   --neutral-Very-dark-blue: hsl(226, 43%, 10%);
   --neutral-Dark-blue: hsl(235, 46%, 20%);
   --neutral-Desaturated-blue: hsl(235, 45%, 61%);
-  --neutral-Pale-Blue: hsl(236, 100%, 87%);
+  --neutral-Pale-Blue: hsla(236, 100%, 87%);
 }
 
 * {
   color: white;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
 }
 
-h1 {
-  font-size: 40px;
+p {
+  color: var(--neutral-Pale-Blue);
 }
